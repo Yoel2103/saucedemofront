@@ -1,0 +1,1672 @@
+[
+  {
+    "description": "  Como usuario autenticado con productos en el carrito\n  Quiero completar el proceso de compra\n  Para finalizar mi pedido exitosamente",
+    "elements": [
+      {
+        "description": "",
+        "id": "caso-de-uso-de-checkout;completar-compra-exitosamente",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Completar compra exitosamente",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 288165100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "Me encuentro en la pagina de Sauce Demo",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 995074300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Ingreso con usuario \"standard_user\" y contraseña \"secret_sauce\"",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1162599200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Me encuentro en la página de productos",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6116400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Agrego \"sauce-labs-backpack\" al carrito",
+            "match": {
+              "location": "step-definitions\\shoppingCartSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21512699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "Voy al carrito de compras",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37837600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "Debo estar en la página del carrito",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6482500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Debo ver 1 producto en el carrito",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5396600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "Procedo al checkout",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29338499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Debo estar en la página de información del checkout",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4067499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "Completo la información del checkout con nombre \"Martin\", apellido \"Carmem\" y código postal \"12345\"",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38872500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "Continúo al resumen del pedido",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29832599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Debo estar en la página de resumen del checkout",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4090099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "Debo ver el resumen del pedido",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23107299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "Finalizo el pedido",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30630299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "Debo ver la confirmación del pedido",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6437099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "Vuelvo a la página principal",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38258599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "Debo ser redirigido a la página de productos",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7943100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 80251099
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "caso-de-uso-de-checkout;checkout-con-múltiples-productos",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Checkout con múltiples productos",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 329961999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "Me encuentro en la pagina de Sauce Demo",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 802694300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Ingreso con usuario \"standard_user\" y contraseña \"secret_sauce\"",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1008663800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Me encuentro en la página de productos",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8175100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Agrego \"sauce-labs-backpack\" al carrito",
+            "match": {
+              "location": "step-definitions\\shoppingCartSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20775400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 28,
+            "name": "Agrego \"sauce-labs-bike-light\" al carrito",
+            "match": {
+              "location": "step-definitions\\shoppingCartSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33153699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "Voy al carrito de compras",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36201100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "Debo estar en la página del carrito",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5890999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "Debo ver 2 productos en el carrito",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5592899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "Procedo al checkout",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37516800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "Completo la información del checkout con nombre \"María\", apellido \"García\" y código postal \"54321\"",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45011300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "Continúo al resumen del pedido",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34009200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "Finalizo el pedido",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35924399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "Debo ver la confirmación del pedido",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9537299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 99754900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "caso-de-uso-de-checkout;checkout-con-información-incompleta",
+        "keyword": "Scenario",
+        "line": 38,
+        "name": "Checkout con información incompleta",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 386870100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "Me encuentro en la pagina de Sauce Demo",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 837359599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Ingreso con usuario \"standard_user\" y contraseña \"secret_sauce\"",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 999811300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Me encuentro en la página de productos",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4517700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Agrego \"sauce-labs-backpack\" al carrito",
+            "match": {
+              "location": "step-definitions\\shoppingCartSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18514499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "Voy al carrito de compras",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29819600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "Procedo al checkout",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31493699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 41,
+            "name": "Continúo al resumen del pedido",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31202100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "Debo ver un mensaje de error \"Error: First Name is required\" en el checkout",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:96"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3817499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 88314000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "caso-de-uso-de-checkout;remover-producto-del-carrito",
+        "keyword": "Scenario",
+        "line": 44,
+        "name": "Remover producto del carrito",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 363951199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "Me encuentro en la pagina de Sauce Demo",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 833579399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Ingreso con usuario \"standard_user\" y contraseña \"secret_sauce\"",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1003634700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Me encuentro en la página de productos",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4034700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Agrego \"sauce-labs-backpack\" al carrito",
+            "match": {
+              "location": "step-definitions\\shoppingCartSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15760500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 45,
+            "name": "Voy al carrito de compras",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30682199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "Remuevo \"sauce-labs-backpack\" del carrito",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23251700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 47,
+            "name": "El carrito debe estar vacío",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:86"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4145500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 80461500
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "caso-de-uso-de-checkout;cancelar-checkout-y-continuar-comprando",
+        "keyword": "Scenario",
+        "line": 49,
+        "name": "Cancelar checkout y continuar comprando",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 325932400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "Me encuentro en la pagina de Sauce Demo",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 812276699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Ingreso con usuario \"standard_user\" y contraseña \"secret_sauce\"",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 997214199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Me encuentro en la página de productos",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4804700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Agrego \"sauce-labs-backpack\" al carrito",
+            "match": {
+              "location": "step-definitions\\shoppingCartSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23614300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 50,
+            "name": "Voy al carrito de compras",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 49813299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "Procedo al checkout",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43069400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 52,
+            "name": "Cancelo el checkout",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:91"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 51311400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 53,
+            "name": "Debo estar en la página del carrito",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6503899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 54,
+            "name": "Continúo comprando",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:103"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 49819500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 55,
+            "name": "Debo ser redirigido a la página de productos",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4598200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 75186900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "caso-de-uso-de-checkout;checkout-solo-con-información-parcial",
+        "keyword": "Scenario",
+        "line": 57,
+        "name": "Checkout solo con información parcial",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 389020899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "Me encuentro en la pagina de Sauce Demo",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 775202099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Ingreso con usuario \"standard_user\" y contraseña \"secret_sauce\"",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1028793800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Me encuentro en la página de productos",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3885099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Agrego \"sauce-labs-backpack\" al carrito",
+            "match": {
+              "location": "step-definitions\\shoppingCartSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15903000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 58,
+            "name": "Voy al carrito de compras",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28598100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 59,
+            "name": "Procedo al checkout",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37152600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 60,
+            "name": "Completo la información del checkout con nombre \"Ana\", apellido \"\" y código postal \"67890\"",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37729299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 61,
+            "name": "Continúo al resumen del pedido",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43650100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 62,
+            "name": "Debo ver un mensaje de error \"Error: Last Name is required\" en el checkout",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:96"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4012700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 99374099
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "caso-de-uso-de-checkout",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Caso de uso de Checkout",
+    "tags": [],
+    "uri": "features\\checkout.feature"
+  },
+  {
+    "description": "  como usuario del sistema\n  Quiero poder iniciar sesión con credenciales válidas\n  Para que pueda acceder a la página de productos",
+    "elements": [
+      {
+        "description": "",
+        "id": "caso-de-uso-login;login-ok-con-credenciales-válidas",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Login Ok con credenciales válidas",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 421290600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "Me encuentro en la pagina de Sauce Demo",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 800623099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "Ingreso con usuario \"standard_user\" y contraseña \"secret_sauce\"",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1028324599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Debo ser redirigido a la página de productos",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3997899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Debo ver el título de los productos",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2860199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 77132900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "caso-de-uso-login;login-fallido-con-mensaje-epic-sadface:-sorry,-this-user-has-been-locked-out.",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Login Fallido con mensaje Epic sadface: Sorry, this user has been locked out.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 455088199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "Me encuentro en la pagina de Sauce Demo",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 789297999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "Ingreso con usuario \"locked_out_user\" y contraseña \"secret_sauce\"",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4157263100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Debo ver un mensaje de error \"Epic sadface: Sorry, this user has been locked out.\"",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4921999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "Debo permanecer en la página de inicio de sesión",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2987900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 84798699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "caso-de-uso-login;login-fallido-con-credenciales-inválidas",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Login Fallido con credenciales inválidas",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 369748700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "Me encuentro en la pagina de Sauce Demo",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 799643500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "Ingreso con usuario \"invalid_user\" y contraseña \"wrong_password\"",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4003273700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "Debo ver un mensaje de error que contenga \"Username and password do not match\"",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3857200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "Debo permanecer en la página de inicio de sesión",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2987499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 84176100
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "caso-de-uso-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Caso de uso Login",
+    "tags": [],
+    "uri": "features\\login.feature"
+  },
+  {
+    "description": "  Como usuario autenticado\n  Quiero agregar productos a mi carrito\n  Para poder comprar artículos",
+    "elements": [
+      {
+        "description": "",
+        "id": "caso-de-uso-de-carrito-de-compras;agregar-un-solo-producto-al-carrito",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Agregar un solo producto al carrito",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 370207000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "Me encuentro en la pagina de Sauce Demo",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 801331799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Ingreso con usuario \"standard_user\" y contraseña \"secret_sauce\"",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1023410100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Me encuentro en la página de productos",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4976200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "Agrego \"sauce-labs-backpack\" al carrito",
+            "match": {
+              "location": "step-definitions\\shoppingCartSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21323499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "el carrito debe mostrar \"1\"",
+            "match": {
+              "location": "step-definitions\\shoppingCartSteps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8378100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "Voy al carrito de compras",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35666899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "Debo estar en la página del carrito",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7762099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Debo ver \"Sauce Labs Backpack\" en el carrito",
+            "match": {
+              "location": "step-definitions\\shoppingCartSteps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4473599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 90338700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "caso-de-uso-de-carrito-de-compras;agregar-múltiples-productos-al-carrito",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Agregar múltiples productos al carrito",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 358094600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "Me encuentro en la pagina de Sauce Demo",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 787033600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Ingreso con usuario \"standard_user\" y contraseña \"secret_sauce\"",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1029425499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Me encuentro en la página de productos",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3607799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "Agrego \"sauce-labs-backpack\" al carrito",
+            "match": {
+              "location": "step-definitions\\shoppingCartSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17609599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "Agrego \"sauce-labs-bike-light\" al carrito",
+            "match": {
+              "location": "step-definitions\\shoppingCartSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18963599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "el carrito debe mostrar \"2\"",
+            "match": {
+              "location": "step-definitions\\shoppingCartSteps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6214599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "Voy al carrito de compras",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37213199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "Debo estar en la página del carrito",
+            "match": {
+              "location": "step-definitions\\checkoutSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4929700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "Debo ver \"Sauce Labs Backpack\" en el carrito",
+            "match": {
+              "location": "step-definitions\\shoppingCartSteps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3989000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "Debo ver \"Sauce Labs Bike Light\" en el carrito",
+            "match": {
+              "location": "step-definitions\\shoppingCartSteps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3193500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 109664799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "caso-de-uso-de-carrito-de-compras;remover-producto-desde-la-página-de-productos",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Remover producto desde la página de productos",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 371051299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "Me encuentro en la pagina de Sauce Demo",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 842269999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Ingreso con usuario \"standard_user\" y contraseña \"secret_sauce\"",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1010905300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Me encuentro en la página de productos",
+            "match": {
+              "location": "step-definitions\\loginSteps.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3602399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "Agrego \"sauce-labs-backpack\" al carrito",
+            "match": {
+              "location": "step-definitions\\shoppingCartSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19876099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "el carrito debe mostrar \"1\"",
+            "match": {
+              "location": "step-definitions\\shoppingCartSteps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3655899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "Remuevo \"sauce-labs-backpack\" del carrito en la página de productos",
+            "match": {
+              "location": "step-definitions\\shoppingCartSteps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15906900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "El carrito debe estar vacío desde productos",
+            "match": {
+              "location": "step-definitions\\shoppingCartSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3391900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 87878299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "caso-de-uso-de-carrito-de-compras",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Caso de uso de carrito de compras",
+    "tags": [],
+    "uri": "features\\shopping-cart.feature"
+  }
+]

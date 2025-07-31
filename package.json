@@ -1,0 +1,23 @@
+{
+  "name": "saucedemo_playwright_front",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:headless": "cross-env HEADLESS=true cucumber-js",
+    "test:report": "cross-env HEADLESS=true cucumber-js --format json:reports/cucumber-report.json --format html:reports/cucumber-report.html",
+    "test:tag": "cucumber-js --tags"
+  },
+  "keywords": [],
+  "author": "Martin Yoel Carmen Carreño  >",
+  "license": "ISC",
+  "description": "Resolver Reto de Playwright con Cucumber",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.1.0",
+    "@playwright/test": "^1.54.1",
+    "@types/node": "^24.1.0",
+    "cross-env": "^10.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
